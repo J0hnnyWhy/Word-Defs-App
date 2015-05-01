@@ -20,4 +20,11 @@ describe(Word) do
       expect(Word.all()).to(eq([test_word]))
     end
   end
+
+  describe(".all") do
+    it("lists all of the words in the list, none to start") do
+      expect(Word.all()).to(eq([]))
+    end
+  end
+
 end
