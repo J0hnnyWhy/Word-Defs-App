@@ -5,7 +5,7 @@ Description: This app allows users to input a chosen word and also a definition.
 Ruby Setup
 Gems used: Sinatra, Sinatra-contrib, rspec, capybara and pry.
 
-Heroku link: 
+Heroku link: https://pacific-wave-2416.herokuapp.com/
 
 Copying/license: The MIT License (MIT)
 
