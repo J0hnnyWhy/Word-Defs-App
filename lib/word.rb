@@ -31,5 +31,4 @@ class Word
     @defs.push(defi)
   end
 
-
 end

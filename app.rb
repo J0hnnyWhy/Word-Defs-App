@@ -5,11 +5,12 @@ require('./lib/word')
 require('./lib/word_def')
 
 get('/') do
-  @words = Words.all()
+   @word = Word.all()
   erb(:index)
 end
 
 get('/defs') do
-
-  erb(:defs)
 end
+
+#   erb(:defs)
+# end
