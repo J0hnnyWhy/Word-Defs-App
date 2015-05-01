@@ -1,0 +1,10 @@
+<h1> Here are the current definitions of your word</h1>
+<h3><%= @word_def %></h3>
+<form action="/def" method="post">
+  <label for="def">Add a New Definition to this Word: </label>
+  <input id="def" name="def" type="text">
+
+  <button type="submit">Add Definition</button>
+</form>
+
+<a href="/">Home</a>

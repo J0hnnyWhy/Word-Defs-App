@@ -17,8 +17,17 @@ post('/') do
 end
 
 
-get('/defs') do
+get('/def') do
+  word_d = Word.word
+  @word_def = word_d.def
+  erb(:def)
 end
 
-#   erb(:defs)
-# end
+post('/def') do
+  defs = params.fetch('def')
+  @def = WordDef.new(defs)
+  @def.save()
+  @word_def = WordDef.all()
+  @word_def.add_def(@def)
+  erb(:def)
+end

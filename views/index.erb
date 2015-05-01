@@ -1,8 +1,9 @@
 <h1>Word Definition App</h1>
 <p>Here are your words:</p>
+<p>Click on a word to see the definition</p>
 <ul>
   <% @word.each() do |x_word| %>
-    <li><%= x_word.word() %></li>
+    <li><a href='/def'><%= x_word.word() %><a/></li>
     <% end %>
 </ul>
 
