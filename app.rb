@@ -9,6 +9,14 @@ get('/') do
   erb(:index)
 end
 
+post('/') do
+  name = params.fetch('name')
+  Word.new(name).save()
+  @word = Word.all()
+  erb(:index)
+end
+
+
 get('/defs') do
 end
 
